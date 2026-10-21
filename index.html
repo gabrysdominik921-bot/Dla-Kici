@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Dla Oli ♥</title>
+  <style>
+    :root{--pink:#ff5c8a;--deep:#b51f53;--cream:#fff8fb;--ink:#52283a}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:linear-gradient(145deg,#fff5f8,#ffe2eb 55%,#fff8fb);color:var(--ink);font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+    .hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+    .heart{position:absolute;bottom:-50px;color:#ff6d9b;opacity:.35;animation:floatUp linear infinite}
+    @keyframes floatUp{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+    header,main,footer{position:relative;z-index:1}
+    header{min-height:90vh;display:grid;place-items:center;text-align:center;padding:48px 20px}
+    .hero{max-width:850px}
+    .eyebrow{font:700 .78rem/1.4 Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--deep)}
+    h1{font-size:clamp(3.2rem,10vw,7.5rem);line-height:.95;margin:18px 0;color:var(--deep);font-weight:normal}
+    .subtitle{font-size:clamp(1.1rem,3vw,1.45rem);line-height:1.7;max-width:620px;margin:25px auto}
+    .button{display:inline-block;border:0;border-radius:999px;background:var(--pink);color:white;padding:14px 24px;font:700 .95rem Arial,sans-serif;text-decoration:none;cursor:pointer;box-shadow:0 8px 22px #ff5c8a33;transition:transform .2s,background .2s}
+    .button:hover{transform:translateY(-2px);background:var(--deep)}
+    .scroll{display:block;margin-top:45px;font: .85rem Arial,sans-serif;color:var(--deep)}
+    section{width:min(900px,calc(100% - 30px));margin:0 auto 28px;padding:clamp(24px,5vw,48px);background:#ffffffb8;border:1px solid #ffffff;border-radius:28px;box-shadow:0 16px 50px #a52b5010;backdrop-filter:blur(8px)}
+    h2{text-align:center;font-size:clamp(1.8rem,5vw,2.7rem);font-weight:normal;color:var(--deep);margin:0 0 22px}
+    .letter{font-size:clamp(1.15rem,3vw,1.45rem);line-height:1.9;text-align:center;white-space:pre-line}
+    .signature{text-align:center;font-size:1.35rem;color:var(--deep);margin-top:25px;font-style:italic}
+    .timer{text-align:center}
+    .timer-intro{font-size:1.05rem;line-height:1.6}
+    .clock{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:25px 0}
+    .timebox{background:#fff0f5;border-radius:18px;padding:18px 8px}
+    .timebox strong{display:block;font:700 clamp(1.6rem,5vw,2.5rem) Arial,sans-serif;color:var(--deep)}
+    .timebox span{font: .75rem Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+    .small{font: .88rem/1.6 Arial,sans-serif;color:#8b5369}
+    .music-controls{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;align-items:center}
+    input[type=file]{display:none}
+    .upload-label{display:inline-block}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .photo{min-height:160px;aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:linear-gradient(135deg,#ffe0ea,#fff7fa);display:grid;place-items:center;text-align:center;color:#b95c7b;padding:12px;position:relative}
+    .photo img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0}
+    .photo span{font: .9rem/1.5 Arial,sans-serif}
+    .photo img+span{display:none}
+    .center{text-align:center}
+    footer{text-align:center;padding:28px 15px 45px;font-size:1rem;color:var(--deep)}
+    @media(max-width:560px){.clock{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.photo:last-child:nth-child(odd){grid-column:span 2;aspect-ratio:16/9}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+  <header>
+    <div class="hero">
+      <div class="eyebrow">mała strona, wielkie uczucia</div>
+      <h1>Dla Oli <span aria-hidden="true">♥</span></h1>
+      <p class="subtitle">Jest tyle rzeczy, które chciałbym Ci powiedzieć… więc zrobiłem dla Ciebie to małe miejsce w internecie.</p>
+      <a class="button" href="#wiadomosc">Otwórz moją wiadomość ♥</a>
+      <span class="scroll">przewiń w dół, mam dla Ciebie coś jeszcze ↓</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="wiadomosc">
+      <h2>Od serca, dla Ciebie</h2>
+      <div class="letter">Jesteś dla mnie wszystkim, serduszko. Tak się cholernie cieszę, że Cię mam. Proszę, zrozum, że jesteś najważniejsza i najśliczniejsza w moich oczach, a Twój brzuszek jest cudny.
+
+Nie musisz być idealna — dla mnie jesteś wyjątkowa dokładnie taka, jaka jesteś. Chcę, żebyś pamiętała, ile dla mnie znaczysz i jak bardzo się cieszę, że jesteś w moim życiu.</div>
+      <div class="signature">Z całego serca, dla Oli ♥</div>
+    </section>
+
+    <section id="licznik" class="timer">
+      <h2>Nasze wspólne chwile</h2>
+      <p class="timer-intro">Każda chwila ma znaczenie. Ten licznik może odliczać czas od dnia, który jest dla Was ważny.</p>
+      <div class="clock" aria-live="polite">
+        <div class="timebox"><strong id="days">—</strong><span>dni</span></div>
+        <div class="timebox"><strong id="hours">—</strong><span>godzin</span></div>
+        <div class="timebox"><strong id="minutes">—</strong><span>minut</span></div>
+        <div class="timebox"><strong id="seconds">—</strong><span>sekund</span></div>
+      </div>
+      <p class="small">Licznik jest ustawiony od 1 października 2025 r. Jeśli chodziło Ci o konkretny dzień w październiku, zmień datę w zmiennej <code>START_DATE</code>.</p>
+    </section>
+
+    <section id="muzyka">
+      <h2>Nasza piosenka</h2>
+      <p class="center">Możesz dodać piosenkę, która kojarzy Ci się z Olą. Muzyka zacznie grać dopiero po kliknięciu — tak działają przeglądarki.</p>
+      <div class="music-controls">
+        <label class="button upload-label" for="musicFile">Wybierz piosenkę</label>
+        <input id="musicFile" type="file" accept="audio/*">
+        <button class="button" id="playBtn" type="button">Odtwórz muzykę ▶</button>
+        <button class="button" id="pauseBtn" type="button">Pauza ❚❚</button>
+      </div>
+      <p class="small center" id="musicStatus">Wybierz plik audio z telefonu lub komputera.</p>
+      <audio id="audio" loop></audio>
+    </section>
+
+    <section id="zdjecia">
+      <h2>Nasze zdjęcia</h2>
+      <p class="center">Wasze zdjęcie już tu jest. Możesz dodać kolejne, a następnie umieścić je w repozytorium, żeby Ola też mogła je zobaczyć.</p>
+      <div class="gallery" id="gallery">
+        <div class="photo"><img src="zdjecia/ola1.jpg" alt="Wspólne zdjęcie Oli i ukochanej osoby"></div>
+        <label class="photo" for="photos"><span>＋<br>Dodaj kolejne zdjęcia</span></label>
+        <div class="photo"><span>Wasze kolejne wspomnienie ♥</span></div>
+      </div>
+      <input id="photos" type="file" accept="image/*" multiple>
+      <p class="small center">Zdjęcie główne jest w folderze <code>zdjecia</code>. Wgraj ten folder razem z plikiem <code>index.html</code>.</p>
+    </section>
+
+    <section class="center">
+      <h2>Jedno pytanie…</h2>
+      <p class="letter">Olu, wiesz, że jesteś dla mnie kimś naprawdę wyjątkowym? ♥</p>
+      <button class="button" id="answerBtn" type="button">Wiem… a teraz przytulasy!</button>
+      <p id="answer" class="signature" hidden>Przytulas dla Ciebie — teraz i zawsze, kiedy go potrzebujesz. ♥</p>
+    </section>
+  </main>
+
+  <footer>Zrobione specjalnie dla Oli ♥<br><span class="small">Niech ta strona przypomina Ci, jaka jesteś ważna.</span></footer>
+
+  <script>
+    // Data startowa licznika: 1 października 2025 r. Zmień dzień, jeśli potrzebujesz dokładniejszej daty.
+    const START_DATE = "2025-10-01T00:00:00";
+    const start = new Date(START_DATE);
+    const $ = id => document.getElementById(id);
+
+    function updateTimer(){
+      const now = new Date();
+      let seconds = Math.max(0, Math.floor((now - start) / 1000));
+      const days = Math.floor(seconds / 86400); seconds %= 86400;
+      const hours = Math.floor(seconds / 3600); seconds %= 3600;
+      const minutes = Math.floor(seconds / 60); seconds %= 60;
+      $("days").textContent = days;
+      $("hours").textContent = hours;
+      $("minutes").textContent = minutes;
+      $("seconds").textContent = seconds;
+    }
+    updateTimer(); setInterval(updateTimer, 1000);
+
+    // Delikatnie unoszące się serduszka w tle.
+    const hearts = $("hearts");
+    for(let i=0;i<18;i++){
+      const h=document.createElement("span");
+      h.className="heart"; h.textContent="♥";
+      h.style.left=(Math.random()*100)+"%";
+      h.style.fontSize=(14+Math.random()*24)+"px";
+      h.style.animationDuration=(10+Math.random()*14)+"s";
+      h.style.animationDelay=(-Math.random()*20)+"s";
+      hearts.appendChild(h);
+    }
+
+    const audio = $("audio");
+    $("musicFile").addEventListener("change", e=>{
+      const file=e.target.files[0];
+      if(!file) return;
+      if(audio.src.startsWith("blob:")) URL.revokeObjectURL(audio.src);
+      audio.src=URL.createObjectURL(file);
+      $("musicStatus").textContent="Wybrano: "+file.name+" — kliknij „Odtwórz muzykę”.";
+    });
+    $("playBtn").addEventListener("click", async ()=>{
+      if(!audio.src){$("musicStatus").textContent="Najpierw wybierz plik audio.";return;}
+      try{await audio.play();$("musicStatus").textContent="Muzyka gra ♥";}
+      catch(err){$("musicStatus").textContent="Nie udało się odtworzyć pliku. Wybierz inny plik audio.";}
+    });
+    $("pauseBtn").addEventListener("click", ()=>audio.pause());
+
+    $("photos").addEventListener("change", e=>{
+      const files=Array.from(e.target.files || []);
+      const gallery=$("gallery");
+      gallery.innerHTML="";
+      files.forEach(file=>{
+        if(!file.type.startsWith("image/")) return;
+        const card=document.createElement("div"); card.className="photo";
+        const img=document.createElement("img"); img.alt="Zdjęcie dla Oli"; img.src=URL.createObjectURL(file);
+        card.appendChild(img); gallery.appendChild(card);
+      });
+      if(!files.length) gallery.innerHTML='<div class="photo"><span>Dodaj Wasze zdjęcia ♥</span></div>';
+    });
+    $("answerBtn").addEventListener("click", ()=>{
+      $("answer").hidden=false;
+      $("answerBtn").textContent="Przytulas zaakceptowany ♥";
+    });
+  </script>
+</body>
+</html>
