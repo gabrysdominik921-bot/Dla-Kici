@@ -80,20 +80,21 @@ Nie musisz być idealna — dla mnie jesteś wyjątkowa dokładnie taka, jaka je
       <p class="small">Licznik jest ustawiony od 1 października 2025 r. Jeśli chodziło Ci o konkretny dzień w październiku, zmień datę w zmiennej <code>START_DATE</code>.</p>
     </section>
 
-    <section id="muzyka">
-      <h2>Nasza piosenka</h2>
-      <p class="center">Możesz dodać piosenkę, która kojarzy Ci się z Olą. Muzyka zacznie grać dopiero po kliknięciu — tak działają przeglądarki.</p>
-      <div class="music-controls">
-        <label class="button upload-label" for="musicFile">Wybierz piosenkę</label>
-        <input id="musicFile" type="file" accept="audio/*">
-        <button class="button" id="playBtn" type="button">Odtwórz muzykę ▶</button>
-        <button class="button" id="pauseBtn" type="button">Pauza ❚❚</button>
-      </div>
-      <p class="small center" id="musicStatus">Wybierz plik audio z telefonu lub komputera.</p>
-      <audio id="audio" loop></audio>
-    </section>
+<section style="max-width:500px;margin:30px auto;padding:20px;text-align:center;color:#fff;background:#2b1524;border-radius:20px;">
+  <h2>Nasza piosenka ❤️</h2>
+  <p>Bedoes — Jesteś ładniejsza niż na zdjęciach</p>
+  <iframe
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/5Z1WR1XHssK7WFOQv7NUTS"
+    width="100%"
+    height="152"
+    frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+  </iframe>
+</section>
 
-    <section id="zdjecia">
+ <section id="zdjecia">
       <h2>Nasze zdjęcia</h2>
       <p class="center">Wasze zdjęcie już tu jest. Możesz dodać kolejne, a następnie umieścić je w repozytorium, żeby Ola też mogła je zobaczyć.</p>
       <div class="gallery" id="gallery">
@@ -177,26 +178,6 @@ Nie musisz być idealna — dla mnie jesteś wyjątkowa dokładnie taka, jaka je
       $("answer").hidden=false;
       $("answerBtn").textContent="Przytulas zaakceptowany ♥";
     });
- 
-  </script>
-
-
-    
-</section>
-
-<section style="max-width:500px;margin:30px auto;padding:20px;text-align:center;color:#fff;background:#2b1524;border-radius:20px;">
-  <h2>Nasza piosenka ❤️</h2>
-  <p>Bedoes — Jesteś ładniejsza niż na zdjęciach</p>
-  <iframe
-    style="border-radius:12px"
-    src="https://open.spotify.com/embed/track/5Z1WR1XHssK7WFOQv7NUTS?utm_source=generator"
-    width="100%"
-    height="152"
-    frameborder="0"
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-    loading="lazy">
-  </iframe>
-</section>
-
+</script>
 </body> 
 </html>
